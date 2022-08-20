@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+nav{
+  background-color: rgb(70, 71, 71);
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+nav image{
+  display: inline-block;
+}
+nav ul li{
+  display: inline-block;
+  position: relative;
+}
+nav ul li a{
+  color: white;
+  padding: 20px 20px;
+  display: block;
+  transition: 0.5s;
+}
+nav ul li a:hover{
+  background: rgb(8, 8, 8);
+}
+nav ul li ul{
+  position: absolute;
+  background-color: rgb(70, 71, 71);
+  width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+}
+nav ul li ul li{
+  display: block;
+}
+nav ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  margin-top: 0;
+}
+.fe{
+  left: 50px;
+}
+.ser{
+  margin-top: -50px;
+}
